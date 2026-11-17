@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gopal Sendhav – Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f7; --surface:#ffffff; --ink:#14213d; --muted:#51607a; --line:#cfd8e6; --accent:#2f5bea; --accent-ink:#ffffff; --chip:#dfe7f5;
+  --display:"Bricolage Grotesque","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1626;--surface:#16213a;--ink:#e8eefb;--muted:#9fb0cf;--line:#2a3857;--accent:#7b9bff;--accent-ink:#0e1626;--chip:#22304f;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#16213a;--ink:#e8eefb;--muted:#9fb0cf;--line:#2a3857;--accent:#7b9bff;--accent-ink:#0e1626;--chip:#22304f;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.5rem;flex-wrap:wrap;padding:1.25rem 0;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+header.hero{padding:3.5rem 0 4rem}
+.hero h1{font:800 clamp(3rem,11vw,7.5rem)/.95 var(--display);letter-spacing:-.03em;margin:0 0 1.5rem}
+.hero p.lead{max-width:36rem;font-size:1.25rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:999px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--ink);border-color:var(--line)}
+.btn:hover{border-color:var(--ink)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:800 2rem/1.1 var(--display);letter-spacing:-.02em;margin:0 0 1.5rem}
+.about{max-width:42rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.75rem}
+.skills h3{font:500 1rem var(--body);color:var(--muted);margin:0 0 .6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.chips li{background:var(--chip);padding:.3rem .85rem;border-radius:6px;font-weight:500}
+.proj{display:grid;grid-template-columns:1fr;gap:.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.proj:first-of-type{padding-top:0}
+.proj h3{font:800 1.5rem/1.2 var(--display);margin:0}
+.proj p{margin:0;max-width:40rem}
+.proj .stack{color:var(--muted);font-size:.95rem}
+.proj .links{display:flex;gap:1.25rem;font-weight:500}
+.proj .links a{color:var(--accent)}
+.contact p{max-width:34rem;color:var(--muted);margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media (min-width:700px){.proj{grid-template-columns:14rem 1fr;gap:2rem}.proj .links{grid-column:2}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Gopal Sendhav</h1>
+    <p class="lead">Final-year CSE student building full-stack web applications with Python, JavaScript, React, and MySQL. I’m looking for a full-time full-stack developer role.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="mailto:sendhavgopal317@gmail.com">Email me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p class="about">I’m a final-year Computer Science and Engineering student at <strong>Alpine Institutes of Technology</strong> (RGPV), graduating in <strong>2027</strong>. I enjoy building full-stack applications that solve everyday problems, like my Multiplex Management System for booking movie tickets. I want to grow as a full-stack developer on products that real people use.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Languages</h3><ul class="chips"><li>Python</li><li>JavaScript</li></ul></div>
+      <div><h3>Frontend</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>ReactJS</li></ul></div>
+      <div><h3>Database</h3><ul class="chips"><li>MySQL</li></ul></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article class="proj">
+      <h3>Multiplex Management System</h3>
+      <div>
+        <p>A ticket booking system for a multiplex. Customers can browse shows and book seats, and staff can manage the multiplex from one place.</p>
+        <p class="stack">Add your tech stack here</p>
+      </div>
+      <div class="links"><a href="https://github.com/your-username/project-one">Source code</a><a href="https://example.com">Live demo</a></div>
+    </article>
+    <article class="proj">
+      <h3>Project Two</h3>
+      <div>
+        <p>Describe what it does and what problem it solves. Mention your role if it was a team project.</p>
+        <p class="stack">JavaScript, HTML, CSS, Bootstrap</p>
+      </div>
+      <div class="links"><a href="https://github.com/your-username/project-two">Source code</a><a href="https://example.com">Live demo</a></div>
+    </article>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let’s talk</h2>
+    <p>I’m open to full-time roles and campus placement opportunities. The fastest way to reach me is email.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:sendhavgopal317@gmail.com">sendhavgopal317@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/your-username">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>© Gopal Sendhav</footer>
+</div>
+</body>
+</html>
